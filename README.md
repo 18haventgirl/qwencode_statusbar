@@ -12,15 +12,27 @@
 
 ## 安装
 
+### 一键安装（推荐）
+
+**Windows（PowerShell）：**
+
+```powershell
+irm https://raw.githubusercontent.com/18haventgirl/qwencode_statusbar/master/install.ps1 | iex
+```
+
+**cargo install（需要 Rust 环境）：**
+
+```bash
+cargo install --git https://github.com/18haventgirl/qwencode_statusbar
+```
+
 ### 从源码编译
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/18haventgirl/qwencode_statusbar.git
 cd qwencode_statusbar
 cargo install --path .
 ```
-
-安装后 `qcstatusbar` 二进制文件位于 `~/.cargo/bin/`，确保该路径在 `PATH` 中。
 
 ### 验证安装
 
