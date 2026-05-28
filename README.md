@@ -1,6 +1,6 @@
 # QCStatusBar
 
-基于 Rust 的高性能 Qwen Code 状态栏工具。
+基于 Rust 的 Qwen Code 状态栏工具。
 
 在 Qwen Code 底部状态栏显示模型名称、Git 分支、Token 用量等信息，并支持自定义"思考中"轮播短语。
 
@@ -132,15 +132,6 @@ qcstatusbar --sync-phrases
 
 > **注意**：短语是静态列表，Qwen Code 每 15 秒随机切换一条。不支持根据对话上下文动态生成。
 
-## 模型识别
-
-QCStatusBar 通过子串匹配识别模型系列，支持：
-
-- **Qwen 系列**：qwen3-coder、qwen3、qwen-coder 等
-- **MIMO 系列**：mimo-v2.5-pro 等
-- **GLM 系列**：glm-4 等
-- **Kimi 系列**：kimi-k2 等
-
 可在 `~/.qwen/qcstatusbar/models.toml` 中自定义模型显示名称和上下文窗口大小。
 
 ## 配置文件说明
@@ -199,7 +190,5 @@ cargo install --path .
 # 运行测试
 cargo test
 ```
-
-## 许可证
 
 MIT
